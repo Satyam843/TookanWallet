@@ -10,11 +10,23 @@ import UIKit
 
 class WalletViewController: UIViewController {
 
+    @IBOutlet weak var lblLimit: UILabel!
+    @IBOutlet weak var lblMoney: UILabel!
+    @IBOutlet weak var lblBalance: UILabel!
     @IBOutlet weak var walletTableView: UITableView!
     var cellHeight = [100,140,140,280]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+super.view.backgroundColor = UIColor.init(red: 28/255, green: 52/255, blue: 248/255, alpha: 255/255)
+        lblBalance.text = "Your Balance"
+        lblMoney.text = " Rs . 3547"
+        lblLimit.text = "Limit: 10000"
+        lblBalance.textColor = UIColor.white
+        lblMoney.textColor = UIColor.white
+        lblLimit.textColor = UIColor.white
+        //lblBalance.adjustsFontSizeToFitWidth = true
+       // lblMoney.adjustsFontSizeToFitWidth = true
+        //lblLimit.adjustsFontSizeToFitWidth = true
     }
     
 }

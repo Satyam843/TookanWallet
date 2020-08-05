@@ -18,146 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AM8-XX-ixg">
-                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" rowHeight="75" id="mTC-rH-dFG" customClass="walletViewCell1" customModule="TookanWallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mTC-rH-dFG" id="Vj7-zr-T9v">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3W-8u-DuC">
-                                                    <rect key="frame" x="35" y="21" width="42" height="12.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caM-oz-FFN">
-                                                    <rect key="frame" x="15" y="43.5" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLm-JM-THs">
-                                                    <rect key="frame" x="237" y="24" width="78" height="30"/>
-                                                    <state key="normal" title="Add Money"/>
-                                                    <connections>
-                                                        <action selector="tapAddMoney:" destination="mTC-rH-dFG" eventType="touchUpInside" id="aLH-72-7f4"/>
-                                                        <segue destination="dTx-OF-d0I" kind="show" id="HQS-PH-O6e"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="caM-oz-FFN" secondAttribute="bottom" constant="10" id="5qX-Yb-tv2"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="s3W-8u-DuC" secondAttribute="trailing" constant="20" symbolic="YES" id="Gpj-yy-NCC"/>
-                                                <constraint firstItem="caM-oz-FFN" firstAttribute="leading" secondItem="Vj7-zr-T9v" secondAttribute="leading" constant="15" id="GyP-aX-1St"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="caM-oz-FFN" secondAttribute="trailing" constant="20" symbolic="YES" id="L76-hp-uzF"/>
-                                                <constraint firstItem="LLm-JM-THs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="caM-oz-FFN" secondAttribute="trailing" constant="8" symbolic="YES" id="PvI-an-ERv"/>
-                                                <constraint firstItem="s3W-8u-DuC" firstAttribute="top" secondItem="Vj7-zr-T9v" secondAttribute="topMargin" constant="10" id="RkZ-Ga-LXJ"/>
-                                                <constraint firstAttribute="trailing" secondItem="LLm-JM-THs" secondAttribute="trailing" constant="99" id="c8d-5Z-wQA"/>
-                                                <constraint firstItem="s3W-8u-DuC" firstAttribute="leading" secondItem="Vj7-zr-T9v" secondAttribute="leadingMargin" constant="15" id="fzS-pD-jgs"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="LLm-JM-THs" secondAttribute="bottom" constant="10" id="tVp-xO-KWg"/>
-                                                <constraint firstItem="caM-oz-FFN" firstAttribute="top" secondItem="s3W-8u-DuC" secondAttribute="bottom" constant="10" id="zfG-al-gIy"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="lblBalanceHeading" destination="s3W-8u-DuC" id="uYv-9c-vkU"/>
-                                            <outlet property="lblBalanceValue" destination="caM-oz-FFN" id="zlV-7L-Mmm"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" rowHeight="75" id="Afm-S6-S4U" customClass="walletViewCell2" customModule="TookanWallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="103" width="414" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Afm-S6-S4U" id="bwV-Zz-vVk">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBD-uN-pJb">
-                                                    <rect key="frame" x="37" y="11" width="98" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rs .3547" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0H-UX-teb">
-                                                    <rect key="frame" x="37" y="40" width="98" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="5kI-Dk-qSS"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="V0H-UX-teb" firstAttribute="top" secondItem="JBD-uN-pJb" secondAttribute="bottom" constant="8" symbolic="YES" id="9tS-jI-gl6"/>
-                                                <constraint firstItem="V0H-UX-teb" firstAttribute="leading" secondItem="bwV-Zz-vVk" secondAttribute="leadingMargin" constant="17" id="EoR-di-9j1"/>
-                                                <constraint firstItem="V0H-UX-teb" firstAttribute="leading" secondItem="JBD-uN-pJb" secondAttribute="leading" id="RYb-2u-jda"/>
-                                                <constraint firstItem="V0H-UX-teb" firstAttribute="trailing" secondItem="JBD-uN-pJb" secondAttribute="trailing" id="pf5-zu-dbr"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="V0H-UX-teb" secondAttribute="bottom" constant="3" id="ygZ-Cv-Uxf"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell4" rowHeight="75" id="Ak8-HM-Hgg" customClass="walletViewCell4" customModule="TookanWallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="178" width="414" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ak8-HM-Hgg" id="tO9-vK-nq6">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell3" rowHeight="75" id="1mG-NG-Sm2" customClass="walletViewCell2" customModule="TookanWallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="253" width="414" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1mG-NG-Sm2" id="6vu-TK-wCq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIT-vM-jI0">
-                                                    <rect key="frame" x="36" y="27" width="0.0" height="21"/>
-                                                    <state key="normal" title="Button" image="credit-card">
-                                                        <color key="titleColor" red="0.086274509799999996" green="0.3294117647" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STw-dG-p62">
-                                                    <rect key="frame" x="286" y="27" width="92" height="21"/>
-                                                    <state key="normal" title="Button" image="settings"/>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="fIT-vM-jI0" secondAttribute="bottom" constant="16" id="1fx-fo-RNB"/>
-                                                <constraint firstItem="STw-dG-p62" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6vu-TK-wCq" secondAttribute="leadingMargin" id="6vh-U3-pF5"/>
-                                                <constraint firstItem="fIT-vM-jI0" firstAttribute="leading" secondItem="6vu-TK-wCq" secondAttribute="leadingMargin" constant="16" id="CWc-eq-jsz"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="STw-dG-p62" secondAttribute="trailing" constant="16" id="URo-x2-ICW"/>
-                                                <constraint firstItem="STw-dG-p62" firstAttribute="leading" secondItem="fIT-vM-jI0" secondAttribute="trailing" constant="250" id="iJP-te-YwI"/>
-                                                <constraint firstItem="STw-dG-p62" firstAttribute="top" secondItem="6vu-TK-wCq" secondAttribute="topMargin" constant="16" id="oT0-kr-vJB"/>
-                                                <constraint firstItem="fIT-vM-jI0" firstAttribute="top" secondItem="6vu-TK-wCq" secondAttribute="topMargin" constant="16" id="qKy-he-0K6"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="STw-dG-p62" secondAttribute="bottom" constant="16" id="rHm-yJ-6qi"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="fIT-vM-jI0" secondAttribute="trailing" id="waN-yV-Vah"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="BuH-21-oE1"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yaL-5a-4XB"/>
-                                </connections>
-                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNX-XK-Tel">
+                                <rect key="frame" x="30" y="118" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkM-5s-oF5">
+                                <rect key="frame" x="30" y="146" width="59.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ON-1W-OkL">
+                                <rect key="frame" x="30" y="181" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.26666666666666666" green="0.58039215686274503" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="AM8-XX-ixg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NdN-Gy-ZQo"/>
-                            <constraint firstItem="AM8-XX-ixg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="ebW-ib-2SG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AM8-XX-ixg" secondAttribute="trailing" id="tKh-yd-Nda"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AM8-XX-ixg" secondAttribute="bottom" id="w5Y-z6-LeJ"/>
+                            <constraint firstItem="WkM-5s-oF5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="HZI-oo-PbA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WNX-XK-Tel" secondAttribute="trailing" symbolic="YES" id="LGs-T6-L7H"/>
+                            <constraint firstItem="WNX-XK-Tel" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="RXD-RM-xH1"/>
+                            <constraint firstItem="4ON-1W-OkL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="U1L-Ex-Uv3"/>
+                            <constraint firstItem="WNX-XK-Tel" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Z9V-WD-2GI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4ON-1W-OkL" secondAttribute="trailing" symbolic="YES" id="a4M-m9-ZMV"/>
+                            <constraint firstItem="4ON-1W-OkL" firstAttribute="top" secondItem="WkM-5s-oF5" secondAttribute="bottom" constant="5" id="c17-00-YME"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WkM-5s-oF5" secondAttribute="trailing" symbolic="YES" id="c6u-A3-lyA"/>
+                            <constraint firstItem="WkM-5s-oF5" firstAttribute="top" secondItem="WNX-XK-Tel" secondAttribute="bottom" constant="10" id="oVR-eU-eS3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="U66-Am-RZH"/>
                     <connections>
-                        <outlet property="walletTableView" destination="AM8-XX-ixg" id="aL9-dB-tfn"/>
+                        <outlet property="lblBalance" destination="WNX-XK-Tel" id="OaX-fn-Szq"/>
+                        <outlet property="lblLimit" destination="4ON-1W-OkL" id="g6f-zI-RXS"/>
+                        <outlet property="lblMoney" destination="WkM-5s-oF5" id="mgj-Zw-8W5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -173,7 +71,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Money to Tookan Wallet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OR-wz-C5O">
-                                <rect key="frame" x="30" y="128" width="374" height="34"/>
+                                <rect key="frame" x="30" y="84" width="374" height="78"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.086274509799999996" green="0.3294117647" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -258,8 +156,4 @@
             <point key="canvasLocation" x="261" y="201"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="credit-card" width="512" height="512"/>
-        <image name="settings" width="241" height="240"/>
-    </resources>
 </document>
