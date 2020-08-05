@@ -10,6 +10,7 @@ import UIKit
 
 class WalletViewController: UIViewController {
 
+    @IBOutlet weak var tapAddMoney: UIButton!
     @IBOutlet weak var lblLimit: UILabel!
     @IBOutlet weak var lblMoney: UILabel!
     @IBOutlet weak var lblBalance: UILabel!
@@ -25,8 +26,12 @@ super.view.backgroundColor = UIColor.init(red: 28/255, green: 52/255, blue: 248/
         lblMoney.textColor = UIColor.white
         lblLimit.textColor = UIColor.white
         //lblBalance.adjustsFontSizeToFitWidth = true
-       // lblMoney.adjustsFontSizeToFitWidth = true
+        //lblMoney.adjustsFontSizeToFitWidth = true
         //lblLimit.adjustsFontSizeToFitWidth = true
+        //lblMoney.adjustsFontForContentSizeCategory = true
+    
+        tapAddMoney.titleLabel?.text = "Add Money"
+        tapAddMoney.titleLabel?.textColor = UIColor.white
     }
     
 }
