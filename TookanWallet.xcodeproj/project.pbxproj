@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C6940E924DAE1F7008F9560 /* walletViewCell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6940E824DAE1F7008F9560 /* walletViewCell4.swift */; };
+		1C6940EB24DAEA11008F9560 /* walletViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6940EA24DAEA11008F9560 /* walletViewCell2.swift */; };
+		1C69C07B24DB12410096D81F /* AddMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C69C07A24DB12400096D81F /* AddMoneyViewController.swift */; };
 		1CE3E00824DA8466009E8D5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE3E00724DA8466009E8D5D /* AppDelegate.swift */; };
 		1CE3E00A24DA8466009E8D5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE3E00924DA8466009E8D5D /* ViewController.swift */; };
 		1CE3E00D24DA8466009E8D5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE3E00B24DA8466009E8D5D /* Main.storyboard */; };
 		1CE3E01024DA8466009E8D5D /* TookanWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CE3E00E24DA8466009E8D5D /* TookanWallet.xcdatamodeld */; };
 		1CE3E01224DA8469009E8D5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE3E01124DA8469009E8D5D /* Assets.xcassets */; };
 		1CE3E01524DA8469009E8D5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE3E01324DA8469009E8D5D /* LaunchScreen.storyboard */; };
+		1CE3E02024DA8CC6009E8D5D /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE3E01F24DA8CC6009E8D5D /* WalletViewController.swift */; };
+		1CE3E02324DABC70009E8D5D /* walletViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE3E02224DABC70009E8D5D /* walletViewCell1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C6940E824DAE1F7008F9560 /* walletViewCell4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletViewCell4.swift; sourceTree = "<group>"; };
+		1C6940EA24DAEA11008F9560 /* walletViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletViewCell2.swift; sourceTree = "<group>"; };
+		1C69C07A24DB12400096D81F /* AddMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyViewController.swift; sourceTree = "<group>"; };
 		1CE3E00424DA8466009E8D5D /* TookanWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TookanWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE3E00724DA8466009E8D5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CE3E00924DA8466009E8D5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		1CE3E01124DA8469009E8D5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CE3E01424DA8469009E8D5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CE3E01624DA8469009E8D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE3E01F24DA8CC6009E8D5D /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		1CE3E02224DABC70009E8D5D /* walletViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletViewCell1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		1CE3E00624DA8466009E8D5D /* TookanWallet */ = {
 			isa = PBXGroup;
 			children = (
-				1CE3E00724DA8466009E8D5D /* AppDelegate.swift */,
-				1CE3E00924DA8466009E8D5D /* ViewController.swift */,
+				1CE3E01C24DA8480009E8D5D /* Model */,
+				1CE3E01D24DA848F009E8D5D /* View */,
+				1CE3E01E24DA84A0009E8D5D /* Controller */,
+				1CE3E02124DABBD8009E8D5D /* TableViewCell */,
 				1CE3E00B24DA8466009E8D5D /* Main.storyboard */,
+				1CE3E00724DA8466009E8D5D /* AppDelegate.swift */,
 				1CE3E01124DA8469009E8D5D /* Assets.xcassets */,
 				1CE3E01324DA8469009E8D5D /* LaunchScreen.storyboard */,
 				1CE3E01624DA8469009E8D5D /* Info.plist */,
 				1CE3E00E24DA8466009E8D5D /* TookanWallet.xcdatamodeld */,
 			);
 			path = TookanWallet;
+			sourceTree = "<group>";
+		};
+		1CE3E01C24DA8480009E8D5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CE3E01D24DA848F009E8D5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CE3E01E24DA84A0009E8D5D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CE3E01F24DA8CC6009E8D5D /* WalletViewController.swift */,
+				1C69C07A24DB12400096D81F /* AddMoneyViewController.swift */,
+				1CE3E00924DA8466009E8D5D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1CE3E02124DABBD8009E8D5D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1CE3E02224DABC70009E8D5D /* walletViewCell1.swift */,
+				1C6940EA24DAEA11008F9560 /* walletViewCell2.swift */,
+				1C6940E824DAE1F7008F9560 /* walletViewCell4.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE3E02324DABC70009E8D5D /* walletViewCell1.swift in Sources */,
 				1CE3E01024DA8466009E8D5D /* TookanWallet.xcdatamodeld in Sources */,
+				1CE3E02024DA8CC6009E8D5D /* WalletViewController.swift in Sources */,
+				1C6940EB24DAEA11008F9560 /* walletViewCell2.swift in Sources */,
 				1CE3E00A24DA8466009E8D5D /* ViewController.swift in Sources */,
+				1C6940E924DAE1F7008F9560 /* walletViewCell4.swift in Sources */,
 				1CE3E00824DA8466009E8D5D /* AppDelegate.swift in Sources */,
+				1C69C07B24DB12410096D81F /* AddMoneyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
