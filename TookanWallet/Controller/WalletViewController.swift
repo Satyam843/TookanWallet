@@ -11,6 +11,10 @@ import UIKit
 class WalletViewController: UIViewController {
 
    
+    
+
+    @IBOutlet weak var btnAddMoney: UIImageView!
+    
     @IBOutlet weak var tapAddMoney: UIButton!
     @IBOutlet weak var lblLimit: UILabel!
     @IBOutlet weak var lblMoney: UILabel!
@@ -22,6 +26,10 @@ class WalletViewController: UIViewController {
                       UIImage(named: "plusSquare")
                     ]
     var imageDescription = ["paid","Added"]
+    var orderId = ["Order 15445","Order 15445","Order 15445","Order 15445"]
+    var time = ["9:23 AM","9:23 AM","9:23 AM","9:23 AM"]
+    var amountData = ["-Rs .180","+Rs .560","-Rs .180","+Rs .560"]
+    var closingBalanceData = ["Closing Balance : Rs.546.54","Closing Balance : Rs.546.54","Closing Balance : Rs.546.54","Closing Balance : Rs.546.54"]
     override func viewDidLoad() {
         super.viewDidLoad()
 super.view.backgroundColor = UIColor.init(red: 28/255, green: 52/255, blue: 248/255, alpha: 255/255)
@@ -40,6 +48,7 @@ super.view.backgroundColor = UIColor.init(red: 28/255, green: 52/255, blue: 248/
         tapAddMoney.titleLabel?.textColor = UIColor.white
     }
     
+  
 }
 extension WalletViewController: UITableViewDelegate,UITableViewDataSource
 {
@@ -58,6 +67,12 @@ extension WalletViewController: UITableViewDelegate,UITableViewDataSource
       let cell = walletTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! walletViewCell
    cell.imgCell.image = imageName[indexPath.row]
         cell.lblCell.text = imageDescription[indexPath.row]
+        cell.lblTime.text = time[indexPath.row]
+        cell.lblOrderId.text = orderId[indexPath.row]
+        cell.lblAmount.text = amountData[indexPath.row]
+        cell.lblClosingBalance.text = closingBalanceData [indexPath.row]
+        cell.lblAmount.font = UIFont.boldSystemFont(ofSize: 17)
+        cell.lblOrderId.font = UIFont.boldSystemFont(ofSize: 17)
         return cell
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -66,6 +81,7 @@ extension WalletViewController: UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 75
     }
+    
     /*func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(cellHeight[indexPath.row])
     }*/

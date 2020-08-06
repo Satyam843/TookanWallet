@@ -14,7 +14,7 @@ class AddMoneyViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 amountTextField.delegate = self
-        super.view.backgroundColor = UIColor.init(red:28/255 , green: 52/255, blue: 248/255, alpha: 255/255)
+       // super.view.backgroundColor = UIColor.init(red:28/255 , green: 52/255, blue: 248/255, alpha: 255/255)
         // Do any additional setup after loading the view.
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
