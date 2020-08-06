@@ -18,6 +18,10 @@ class WalletViewController: UIViewController {
     @IBOutlet weak var walletTableView: UITableView!
     var cellHeight = [100,140,140,280]
     var sectionTitles  = ["5 August 2020","4 August 2020"]
+    var imageName = [ UIImage(named: "AddedIcon"),
+                      UIImage(named: "plusSquare")
+                    ]
+    var imageDescription = ["paid","Added"]
     override func viewDidLoad() {
         super.viewDidLoad()
 super.view.backgroundColor = UIColor.init(red: 28/255, green: 52/255, blue: 248/255, alpha: 255/255)
@@ -51,7 +55,9 @@ extension WalletViewController: UITableViewDelegate,UITableViewDataSource
         return 2
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      let cell = walletTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+      let cell = walletTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! walletViewCell
+   cell.imgCell.image = imageName[indexPath.row]
+        cell.lblCell.text = imageDescription[indexPath.row]
         return cell
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

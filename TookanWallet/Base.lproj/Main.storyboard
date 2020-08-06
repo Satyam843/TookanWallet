@@ -54,13 +54,39 @@
                                 <rect key="frame" x="0.0" y="240" width="414" height="622"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="QHL-Lw-IW4">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="QHL-Lw-IW4" customClass="walletViewCell" customModule="TookanWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QHL-Lw-IW4" id="rfP-wp-C2a">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R6Q-PP-lgU">
+                                                    <rect key="frame" x="25" y="16" width="34" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="34" id="8gL-y8-bBn"/>
+                                                        <constraint firstAttribute="height" constant="34" id="Hpi-8h-124"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuH-9o-Suc">
+                                                    <rect key="frame" x="5" y="55" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XuH-9o-Suc" secondAttribute="trailing" constant="20" symbolic="YES" id="Csg-FR-QzA"/>
+                                                <constraint firstItem="XuH-9o-Suc" firstAttribute="top" secondItem="R6Q-PP-lgU" secondAttribute="bottom" constant="5" id="Nzw-MJ-3Ka"/>
+                                                <constraint firstItem="R6Q-PP-lgU" firstAttribute="top" secondItem="rfP-wp-C2a" secondAttribute="topMargin" constant="5" id="OoW-h2-bPD"/>
+                                                <constraint firstItem="R6Q-PP-lgU" firstAttribute="leading" secondItem="rfP-wp-C2a" secondAttribute="leadingMargin" constant="5" id="cao-G7-xbk"/>
+                                                <constraint firstItem="XuH-9o-Suc" firstAttribute="leading" secondItem="rfP-wp-C2a" secondAttribute="leading" constant="5" id="zFw-Rn-orR"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgCell" destination="R6Q-PP-lgU" id="xQJ-Ze-gTE"/>
+                                            <outlet property="lblCell" destination="XuH-9o-Suc" id="yiN-jd-CZF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
