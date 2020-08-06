@@ -30,7 +30,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ON-1W-OkL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ON-1W-OkL">
                                 <rect key="frame" x="30" y="175.5" width="31" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -55,10 +55,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowIcon" translatesAutoresizingMaskIntoConstraints="NO" id="nyM-H5-YyI">
-                                <rect key="frame" x="260" y="161" width="134" height="29"/>
+                                <rect key="frame" x="280" y="161" width="100" height="29"/>
                                 <color key="backgroundColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="2k2-eT-VZo"/>
+                                    <constraint firstAttribute="width" constant="100" id="oeW-VJ-fOx"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -82,10 +83,9 @@
                             <constraint firstItem="Oku-ex-o4u" firstAttribute="top" secondItem="nyM-H5-YyI" secondAttribute="bottom" constant="50" id="fQm-PW-e1a"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nuo-GG-tY7" secondAttribute="trailing" constant="40" id="jBS-hc-uor"/>
                             <constraint firstItem="Nuo-GG-tY7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WkM-5s-oF5" secondAttribute="trailing" constant="8" symbolic="YES" id="jGH-F7-TlJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nyM-H5-YyI" secondAttribute="trailing" constant="20" id="lfN-It-RT1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nyM-H5-YyI" secondAttribute="trailing" constant="34" id="lfN-It-RT1"/>
                             <constraint firstItem="NwY-iO-JNu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="oG9-kT-tpv"/>
                             <constraint firstItem="Oku-ex-o4u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="slC-FZ-Cln"/>
-                            <constraint firstItem="nyM-H5-YyI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="260" id="zA0-90-3da"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
