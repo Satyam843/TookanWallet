@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WII-9k-8aD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -239,10 +239,13 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICR-At-lRA">
                                         <rect key="frame" x="30" y="580" width="354" height="30"/>
-                                        <color key="backgroundColor" red="0.086274509799999996" green="0.3294117647" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Proceed">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="WII-9k-8aD" kind="show" id="tgO-7X-fFY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -302,35 +305,102 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hh-CY-ZuT">
-                                <rect key="frame" x="25" y="74" width="302" height="20.5"/>
+                                <rect key="frame" x="5" y="74" width="342" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVz-dX-zDu">
-                                <rect key="frame" x="347" y="74" width="42" height="21"/>
+                                <rect key="frame" x="367" y="74" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoW-LI-xfO">
+                                <rect key="frame" x="30" y="782" width="354" height="30"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qax-uI-WJB">
+                                <rect key="frame" x="0.0" y="124.5" width="414" height="617.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="77" id="0eE-mK-9Kw" customClass="addMoneyWalletCell" customModule="TookanWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="77"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0eE-mK-9Kw" id="GA4-7D-wbW">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="76.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGD-J5-x1Z">
+                                                    <rect key="frame" x="50" y="17" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEA-e4-dGF">
+                                                    <rect key="frame" x="50" y="45" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WEA-e4-dGF" secondAttribute="trailing" constant="20" symbolic="YES" id="5ia-R0-r2U"/>
+                                                <constraint firstItem="WEA-e4-dGF" firstAttribute="top" secondItem="GA4-7D-wbW" secondAttribute="top" constant="45" id="9b5-F8-Tdn"/>
+                                                <constraint firstItem="WEA-e4-dGF" firstAttribute="leading" secondItem="GA4-7D-wbW" secondAttribute="leadingMargin" constant="30" id="G6F-Gb-BFB"/>
+                                                <constraint firstAttribute="bottom" secondItem="WEA-e4-dGF" secondAttribute="bottom" constant="11" id="Y4o-So-osF"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wGD-J5-x1Z" secondAttribute="bottom" constant="28" id="hoJ-Kw-lEQ"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wGD-J5-x1Z" secondAttribute="trailing" constant="20" symbolic="YES" id="lks-aJ-awu"/>
+                                                <constraint firstItem="wGD-J5-x1Z" firstAttribute="leading" secondItem="GA4-7D-wbW" secondAttribute="leadingMargin" constant="30" id="rE0-PI-mNt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblAccountNo" destination="WEA-e4-dGF" id="Xka-tG-W8J"/>
+                                            <outlet property="lblBankName" destination="wGD-J5-x1Z" id="HP4-Bz-rqn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="WII-9k-8aD" id="Xnx-QF-LUb"/>
+                                    <outlet property="delegate" destination="WII-9k-8aD" id="YHc-fe-uXf"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="CVz-dX-zDu" secondAttribute="trailing" constant="5" id="OjC-PW-kSd"/>
-                            <constraint firstItem="0hh-CY-ZuT" firstAttribute="leading" secondItem="L3e-uH-cXv" secondAttribute="leadingMargin" constant="5" id="Qwr-gM-7M5"/>
+                            <constraint firstItem="xMz-Zu-mI7" firstAttribute="bottom" secondItem="ZoW-LI-xfO" secondAttribute="bottom" constant="50" id="3eu-xe-ggR"/>
+                            <constraint firstItem="xMz-Zu-mI7" firstAttribute="trailing" secondItem="Qax-uI-WJB" secondAttribute="trailing" id="5Zg-R6-voZ"/>
+                            <constraint firstItem="xMz-Zu-mI7" firstAttribute="trailing" secondItem="CVz-dX-zDu" secondAttribute="trailing" constant="5" id="SWX-bC-IiY"/>
+                            <constraint firstItem="Qax-uI-WJB" firstAttribute="top" secondItem="0hh-CY-ZuT" secondAttribute="bottom" constant="30" id="WCN-fd-xNj"/>
+                            <constraint firstItem="Qax-uI-WJB" firstAttribute="leading" secondItem="xMz-Zu-mI7" secondAttribute="leading" id="acS-df-rNK"/>
+                            <constraint firstItem="ZoW-LI-xfO" firstAttribute="top" secondItem="Qax-uI-WJB" secondAttribute="bottom" constant="40" id="bNA-A3-4if"/>
+                            <constraint firstItem="ZoW-LI-xfO" firstAttribute="leading" secondItem="xMz-Zu-mI7" secondAttribute="leading" constant="30" id="bNU-mi-Ej5"/>
                             <constraint firstItem="0hh-CY-ZuT" firstAttribute="top" secondItem="xMz-Zu-mI7" secondAttribute="top" constant="30" id="hhA-fd-GsL"/>
+                            <constraint firstItem="CVz-dX-zDu" firstAttribute="leading" secondItem="0hh-CY-ZuT" secondAttribute="trailing" constant="20" id="kDG-G7-hq2"/>
+                            <constraint firstItem="0hh-CY-ZuT" firstAttribute="leading" secondItem="xMz-Zu-mI7" secondAttribute="leading" constant="5" id="lQ8-Sm-VEm"/>
                             <constraint firstItem="CVz-dX-zDu" firstAttribute="top" secondItem="xMz-Zu-mI7" secondAttribute="top" constant="30" id="pkW-9m-gR4"/>
-                            <constraint firstItem="CVz-dX-zDu" firstAttribute="leading" secondItem="0hh-CY-ZuT" secondAttribute="trailing" constant="20" id="xrI-2P-BQV"/>
+                            <constraint firstItem="CVz-dX-zDu" firstAttribute="leading" secondItem="0hh-CY-ZuT" secondAttribute="trailing" constant="20" id="vjV-Km-mbL"/>
+                            <constraint firstItem="xMz-Zu-mI7" firstAttribute="trailing" secondItem="ZoW-LI-xfO" secondAttribute="trailing" constant="30" id="znQ-KT-d1f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xMz-Zu-mI7"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RiQ-se-DuM" appends="YES" id="rAn-ff-DYi"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="zBw-bp-itL"/>
                     <connections>
+                        <outlet property="addMoneyWalletTableView" destination="Qax-uI-WJB" id="mZj-Zs-Tyh"/>
+                        <outlet property="btnProceed" destination="ZoW-LI-xfO" id="BuE-6F-PP7"/>
                         <outlet property="lblAddMoneyWallet" destination="0hh-CY-ZuT" id="PoU-jC-Zqz"/>
                         <outlet property="lblMoneyValue" destination="CVz-dX-zDu" id="XNb-Kl-uVt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbU-gD-q2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RiQ-se-DuM"/>
             </objects>
             <point key="canvasLocation" x="2702.898550724638" y="120.53571428571428"/>
         </scene>

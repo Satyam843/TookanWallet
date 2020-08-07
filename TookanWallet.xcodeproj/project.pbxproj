@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C69C07B24DB12410096D81F /* AddMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C69C07A24DB12400096D81F /* AddMoneyViewController.swift */; };
+		1C6DAA9924DD5EEF0027F0F3 /* addMoneyWalletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6DAA9824DD5EEF0027F0F3 /* addMoneyWalletCell.swift */; };
 		1C73519124DD2EBC007A2C53 /* addMoneyWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C73519024DD2EBC007A2C53 /* addMoneyWalletViewController.swift */; };
 		1C87345C24DC1555001CD76C /* walletViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C87345B24DC1555001CD76C /* walletViewCell.swift */; };
 		1CE3E00824DA8466009E8D5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE3E00724DA8466009E8D5D /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1C69C07A24DB12400096D81F /* AddMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyViewController.swift; sourceTree = "<group>"; };
+		1C6DAA9824DD5EEF0027F0F3 /* addMoneyWalletCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMoneyWalletCell.swift; sourceTree = "<group>"; };
 		1C73519024DD2EBC007A2C53 /* addMoneyWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMoneyWalletViewController.swift; sourceTree = "<group>"; };
 		1C87345B24DC1555001CD76C /* walletViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletViewCell.swift; sourceTree = "<group>"; };
 		1CE3E00424DA8466009E8D5D /* TookanWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TookanWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				1C87345B24DC1555001CD76C /* walletViewCell.swift */,
+				1C6DAA9824DD5EEF0027F0F3 /* addMoneyWalletCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				1C87345C24DC1555001CD76C /* walletViewCell.swift in Sources */,
 				1CE3E02024DA8CC6009E8D5D /* WalletViewController.swift in Sources */,
 				1CE3E00A24DA8466009E8D5D /* ViewController.swift in Sources */,
+				1C6DAA9924DD5EEF0027F0F3 /* addMoneyWalletCell.swift in Sources */,
 				1CE3E00824DA8466009E8D5D /* AppDelegate.swift in Sources */,
 				1C69C07B24DB12410096D81F /* AddMoneyViewController.swift in Sources */,
 			);
