@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WII-9k-8aD">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -300,14 +300,39 @@
                     <view key="view" contentMode="scaleToFill" id="L3e-uH-cXv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hh-CY-ZuT">
+                                <rect key="frame" x="25" y="74" width="302" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVz-dX-zDu">
+                                <rect key="frame" x="347" y="74" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="CVz-dX-zDu" secondAttribute="trailing" constant="5" id="OjC-PW-kSd"/>
+                            <constraint firstItem="0hh-CY-ZuT" firstAttribute="leading" secondItem="L3e-uH-cXv" secondAttribute="leadingMargin" constant="5" id="Qwr-gM-7M5"/>
+                            <constraint firstItem="0hh-CY-ZuT" firstAttribute="top" secondItem="xMz-Zu-mI7" secondAttribute="top" constant="30" id="hhA-fd-GsL"/>
+                            <constraint firstItem="CVz-dX-zDu" firstAttribute="top" secondItem="xMz-Zu-mI7" secondAttribute="top" constant="30" id="pkW-9m-gR4"/>
+                            <constraint firstItem="CVz-dX-zDu" firstAttribute="leading" secondItem="0hh-CY-ZuT" secondAttribute="trailing" constant="20" id="xrI-2P-BQV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xMz-Zu-mI7"/>
                     </view>
                     <navigationItem key="navigationItem" id="zBw-bp-itL"/>
+                    <connections>
+                        <outlet property="lblAddMoneyWallet" destination="0hh-CY-ZuT" id="PoU-jC-Zqz"/>
+                        <outlet property="lblMoneyValue" destination="CVz-dX-zDu" id="XNb-Kl-uVt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbU-gD-q2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2703" y="121"/>
+            <point key="canvasLocation" x="2702.898550724638" y="120.53571428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RVW-5w-Rz0">
