@@ -19,39 +19,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNX-XK-Tel">
-                                <rect key="frame" x="30" y="118" width="31" height="14.5"/>
+                                <rect key="frame" x="30" y="74" width="31" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkM-5s-oF5">
-                                <rect key="frame" x="10" y="137.5" width="71" height="36"/>
+                                <rect key="frame" x="10" y="93.5" width="71" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ON-1W-OkL">
-                                <rect key="frame" x="30" y="175.5" width="31" height="14.5"/>
+                                <rect key="frame" x="30" y="131.5" width="31" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuo-GG-tY7">
-                                <rect key="frame" x="287" y="133" width="87" height="33"/>
+                                <rect key="frame" x="287" y="89" width="87" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Add Money">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dTx-OF-d0I" kind="show" id="CDp-fw-GZ9"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="NwY-iO-JNu">
-                                <rect key="frame" x="262" y="143" width="15" height="15"/>
+                                <rect key="frame" x="262" y="99" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="cav-9W-5xP"/>
                                     <constraint firstAttribute="width" constant="15" id="ct4-gh-ua2"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oku-ex-o4u">
-                                <rect key="frame" x="0.0" y="240" width="414" height="622"/>
+                                <rect key="frame" x="0.0" y="196" width="414" height="666"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="QHL-Lw-IW4" customClass="walletViewCell" customModule="TookanWallet" customModuleProvider="target">
@@ -141,7 +144,7 @@
                                 </connections>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowIcon" translatesAutoresizingMaskIntoConstraints="NO" id="nyM-H5-YyI">
-                                <rect key="frame" x="280" y="161" width="100" height="29"/>
+                                <rect key="frame" x="280" y="117" width="100" height="29"/>
                                 <color key="backgroundColor" red="0.10980392160000001" green="0.20392156859999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="2k2-eT-VZo"/>
@@ -149,7 +152,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6Z-W8-VOX">
-                                <rect key="frame" x="0.0" y="211" width="414" height="29"/>
+                                <rect key="frame" x="0.0" y="167" width="414" height="29"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -188,11 +191,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="U66-Am-RZH"/>
                     <connections>
-                        <outlet property="btnAddMoney" destination="nyM-H5-YyI" id="bUy-ox-51q"/>
+                        <outlet property="btnAddMoney" destination="Nuo-GG-tY7" id="YdK-QW-VUL"/>
                         <outlet property="lblBalance" destination="WNX-XK-Tel" id="OaX-fn-Szq"/>
                         <outlet property="lblLimit" destination="4ON-1W-OkL" id="g6f-zI-RXS"/>
                         <outlet property="lblMoney" destination="WkM-5s-oF5" id="mgj-Zw-8W5"/>
-                        <outlet property="tapAddMoney" destination="nyM-H5-YyI" id="2Uf-el-eBR"/>
                         <outlet property="walletTableView" destination="Oku-ex-o4u" id="W9B-nd-fgf"/>
                     </connections>
                 </viewController>
@@ -259,6 +261,9 @@
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="78" id="Bp5-cV-qeT"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="leftArrow"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="A5p-gL-S9B"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -288,6 +293,22 @@
             </objects>
             <point key="canvasLocation" x="1918.840579710145" y="120.53571428571428"/>
         </scene>
+        <!--Add Money Wallet View Controller-->
+        <scene sceneID="0W2-A4-dRx">
+            <objects>
+                <viewController id="WII-9k-8aD" customClass="addMoneyWalletViewController" customModule="TookanWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L3e-uH-cXv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xMz-Zu-mI7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zBw-bp-itL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbU-gD-q2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2703" y="121"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="RVW-5w-Rz0">
             <objects>
@@ -312,4 +333,7 @@
         <image name="leftArrow" width="512" height="512"/>
         <image name="plus" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="A5p-gL-S9B"/>
+    </inferredMetricsTieBreakers>
 </document>
