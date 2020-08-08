@@ -31,21 +31,4 @@ class addMoneyWalletViewController: UIViewController {
     }
 
 }
-extension addMoneyWalletViewController:  UITableViewDelegate,UITableViewDataSource
-{
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = addMoneyWalletTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! addMoneyWalletCell
-        cell.lblBankName.text = bankData[indexPath.row]
-        cell.lblAccountNo.text = accountNumber[indexPath.row]
-        cell.lblBankName.font = UIFont.boldSystemFont(ofSize: 17)
-        return cell
-        
-    }
-   
-}
+

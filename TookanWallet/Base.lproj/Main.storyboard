@@ -323,74 +323,68 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qax-uI-WJB">
-                                <rect key="frame" x="0.0" y="124.5" width="414" height="617.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="77" id="0eE-mK-9Kw" customClass="addMoneyWalletCell" customModule="TookanWallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="77"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0eE-mK-9Kw" id="GA4-7D-wbW">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="76.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGD-J5-x1Z">
-                                                    <rect key="frame" x="50" y="15" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEA-e4-dGF">
-                                                    <rect key="frame" x="50" y="45" width="42" height="21.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WEA-e4-dGF" secondAttribute="trailing" constant="20" symbolic="YES" id="5ia-R0-r2U"/>
-                                                <constraint firstItem="WEA-e4-dGF" firstAttribute="top" secondItem="GA4-7D-wbW" secondAttribute="top" constant="45" id="9b5-F8-Tdn"/>
-                                                <constraint firstItem="WEA-e4-dGF" firstAttribute="leading" secondItem="GA4-7D-wbW" secondAttribute="leadingMargin" constant="30" id="G6F-Gb-BFB"/>
-                                                <constraint firstAttribute="bottom" secondItem="WEA-e4-dGF" secondAttribute="bottom" constant="10" id="Y4o-So-osF"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="wGD-J5-x1Z" secondAttribute="bottom" constant="30" id="hoJ-Kw-lEQ"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wGD-J5-x1Z" secondAttribute="trailing" constant="20" symbolic="YES" id="lks-aJ-awu"/>
-                                                <constraint firstItem="wGD-J5-x1Z" firstAttribute="leading" secondItem="GA4-7D-wbW" secondAttribute="leadingMargin" constant="30" id="rE0-PI-mNt"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="lblAccountNo" destination="WEA-e4-dGF" id="Xka-tG-W8J"/>
-                                            <outlet property="lblBankName" destination="wGD-J5-x1Z" id="HP4-Bz-rqn"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="WII-9k-8aD" id="Xnx-QF-LUb"/>
-                                    <outlet property="delegate" destination="WII-9k-8aD" id="YHc-fe-uXf"/>
-                                </connections>
-                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DP8-MJ-ZOh">
+                                <rect key="frame" x="20" y="164" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="3tN-b3-ijr"/>
+                                    <constraint firstAttribute="width" constant="25" id="RKv-Dh-xmJ"/>
+                                </constraints>
+                                <state key="normal" image="radio-of-button"/>
+                                <state key="selected" image="radio-on-button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hv5-P6-6wi">
+                                <rect key="frame" x="20" y="254" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="FHf-qX-K21"/>
+                                    <constraint firstAttribute="height" constant="25" id="wR1-WD-fTN"/>
+                                </constraints>
+                                <state key="normal" image="radio-of-button"/>
+                                <state key="selected" image="radio-on-button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="od6-4c-qa5">
+                                <rect key="frame" x="20" y="344" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="6um-AY-V0K"/>
+                                    <constraint firstAttribute="height" constant="25" id="cbz-io-49E"/>
+                                </constraints>
+                                <state key="normal" image="radio-of-button"/>
+                                <state key="selected" image="radio-on-button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3y-X1-823">
+                                <rect key="frame" x="20" y="434" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="CtV-I9-Z3e"/>
+                                    <constraint firstAttribute="height" constant="25" id="lU5-7j-6F2"/>
+                                </constraints>
+                                <state key="normal" image="plusButton"/>
+                                <state key="selected" image="radio-on-button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="xMz-Zu-mI7" firstAttribute="bottom" secondItem="ZoW-LI-xfO" secondAttribute="bottom" constant="50" id="3eu-xe-ggR"/>
-                            <constraint firstItem="xMz-Zu-mI7" firstAttribute="trailing" secondItem="Qax-uI-WJB" secondAttribute="trailing" id="5Zg-R6-voZ"/>
+                            <constraint firstItem="hv5-P6-6wi" firstAttribute="top" secondItem="DP8-MJ-ZOh" secondAttribute="bottom" constant="65" id="G1H-UV-KLx"/>
+                            <constraint firstItem="DP8-MJ-ZOh" firstAttribute="leading" secondItem="xMz-Zu-mI7" secondAttribute="leading" constant="20" id="HHX-X5-4Vv"/>
+                            <constraint firstItem="od6-4c-qa5" firstAttribute="top" secondItem="hv5-P6-6wi" secondAttribute="bottom" constant="65" id="Idi-mG-JOA"/>
                             <constraint firstItem="xMz-Zu-mI7" firstAttribute="trailing" secondItem="CVz-dX-zDu" secondAttribute="trailing" constant="5" id="SWX-bC-IiY"/>
-                            <constraint firstItem="Qax-uI-WJB" firstAttribute="top" secondItem="0hh-CY-ZuT" secondAttribute="bottom" constant="30" id="WCN-fd-xNj"/>
-                            <constraint firstItem="Qax-uI-WJB" firstAttribute="leading" secondItem="xMz-Zu-mI7" secondAttribute="leading" id="acS-df-rNK"/>
-                            <constraint firstItem="ZoW-LI-xfO" firstAttribute="top" secondItem="Qax-uI-WJB" secondAttribute="bottom" constant="40" id="bNA-A3-4if"/>
+                            <constraint firstItem="b3y-X1-823" firstAttribute="top" secondItem="od6-4c-qa5" secondAttribute="bottom" constant="65" id="Sd2-4Z-sOC"/>
+                            <constraint firstItem="od6-4c-qa5" firstAttribute="leading" secondItem="xMz-Zu-mI7" secondAttribute="leading" constant="20" id="Seb-Y1-MWQ"/>
                             <constraint firstItem="ZoW-LI-xfO" firstAttribute="leading" secondItem="xMz-Zu-mI7" secondAttribute="leading" constant="30" id="bNU-mi-Ej5"/>
+                            <constraint firstItem="DP8-MJ-ZOh" firstAttribute="top" secondItem="xMz-Zu-mI7" secondAttribute="top" constant="120" id="gMo-xd-5so"/>
                             <constraint firstItem="0hh-CY-ZuT" firstAttribute="top" secondItem="xMz-Zu-mI7" secondAttribute="top" constant="30" id="hhA-fd-GsL"/>
                             <constraint firstItem="CVz-dX-zDu" firstAttribute="leading" secondItem="0hh-CY-ZuT" secondAttribute="trailing" constant="20" id="kDG-G7-hq2"/>
+                            <constraint firstItem="b3y-X1-823" firstAttribute="leading" secondItem="xMz-Zu-mI7" secondAttribute="leading" constant="20" id="kVn-yY-CPN"/>
                             <constraint firstItem="0hh-CY-ZuT" firstAttribute="leading" secondItem="xMz-Zu-mI7" secondAttribute="leading" constant="5" id="lQ8-Sm-VEm"/>
                             <constraint firstItem="CVz-dX-zDu" firstAttribute="top" secondItem="xMz-Zu-mI7" secondAttribute="top" constant="30" id="pkW-9m-gR4"/>
                             <constraint firstItem="CVz-dX-zDu" firstAttribute="leading" secondItem="0hh-CY-ZuT" secondAttribute="trailing" constant="20" id="vjV-Km-mbL"/>
+                            <constraint firstItem="hv5-P6-6wi" firstAttribute="leading" secondItem="xMz-Zu-mI7" secondAttribute="leading" constant="20" id="z7B-2x-EUh"/>
                             <constraint firstItem="xMz-Zu-mI7" firstAttribute="trailing" secondItem="ZoW-LI-xfO" secondAttribute="trailing" constant="30" id="znQ-KT-d1f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xMz-Zu-mI7"/>
                     </view>
                     <navigationItem key="navigationItem" id="zBw-bp-itL"/>
                     <connections>
-                        <outlet property="addMoneyWalletTableView" destination="Qax-uI-WJB" id="mZj-Zs-Tyh"/>
                         <outlet property="btnProceed" destination="ZoW-LI-xfO" id="BuE-6F-PP7"/>
                         <outlet property="lblAddMoneyWallet" destination="0hh-CY-ZuT" id="PoU-jC-Zqz"/>
                         <outlet property="lblMoneyValue" destination="CVz-dX-zDu" id="XNb-Kl-uVt"/>
@@ -423,6 +417,9 @@
         <image name="arrowIcon" width="263" height="192"/>
         <image name="leftArrow" width="512" height="512"/>
         <image name="plus" width="512" height="512"/>
+        <image name="plusButton" width="512" height="512"/>
+        <image name="radio-of-button" width="225" height="225"/>
+        <image name="radio-on-button" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="A5p-gL-S9B"/>
