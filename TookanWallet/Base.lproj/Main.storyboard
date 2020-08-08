@@ -259,7 +259,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQX-pr-zHC">
-                                <rect key="frame" x="5" y="44" width="78" height="39"/>
+                                <rect key="frame" x="5" y="44" width="70" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="78" id="Bp5-cV-qeT"/>
                                 </constraints>
@@ -335,13 +335,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGD-J5-x1Z">
-                                                    <rect key="frame" x="50" y="17" width="42" height="21"/>
+                                                    <rect key="frame" x="50" y="15" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEA-e4-dGF">
-                                                    <rect key="frame" x="50" y="45" width="42" height="20.5"/>
+                                                    <rect key="frame" x="50" y="45" width="42" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -351,8 +351,8 @@
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WEA-e4-dGF" secondAttribute="trailing" constant="20" symbolic="YES" id="5ia-R0-r2U"/>
                                                 <constraint firstItem="WEA-e4-dGF" firstAttribute="top" secondItem="GA4-7D-wbW" secondAttribute="top" constant="45" id="9b5-F8-Tdn"/>
                                                 <constraint firstItem="WEA-e4-dGF" firstAttribute="leading" secondItem="GA4-7D-wbW" secondAttribute="leadingMargin" constant="30" id="G6F-Gb-BFB"/>
-                                                <constraint firstAttribute="bottom" secondItem="WEA-e4-dGF" secondAttribute="bottom" constant="11" id="Y4o-So-osF"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="wGD-J5-x1Z" secondAttribute="bottom" constant="28" id="hoJ-Kw-lEQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="WEA-e4-dGF" secondAttribute="bottom" constant="10" id="Y4o-So-osF"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wGD-J5-x1Z" secondAttribute="bottom" constant="30" id="hoJ-Kw-lEQ"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wGD-J5-x1Z" secondAttribute="trailing" constant="20" symbolic="YES" id="lks-aJ-awu"/>
                                                 <constraint firstItem="wGD-J5-x1Z" firstAttribute="leading" secondItem="GA4-7D-wbW" secondAttribute="leadingMargin" constant="30" id="rE0-PI-mNt"/>
                                             </constraints>
@@ -387,9 +387,6 @@
                             <constraint firstItem="xMz-Zu-mI7" firstAttribute="trailing" secondItem="ZoW-LI-xfO" secondAttribute="trailing" constant="30" id="znQ-KT-d1f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xMz-Zu-mI7"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="RiQ-se-DuM" appends="YES" id="rAn-ff-DYi"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="zBw-bp-itL"/>
                     <connections>
@@ -400,7 +397,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbU-gD-q2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="RiQ-se-DuM"/>
             </objects>
             <point key="canvasLocation" x="2702.898550724638" y="120.53571428571428"/>
         </scene>

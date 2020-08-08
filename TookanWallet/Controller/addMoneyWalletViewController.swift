@@ -15,7 +15,8 @@ class addMoneyWalletViewController: UIViewController {
     @IBOutlet weak var lblMoneyValue: UILabel!
     @IBOutlet weak var lblAddMoneyWallet: UILabel!
     var bankData = ["State Bank of India","HDFC Bank","ICICI Bank","Add Card"]
-    var accountNumber = ["A/c No . *****56847","A/c No . *****56847","A/c No . *****56847","A/c No . *****56847"]
+    var accountNumber = ["A/c No . *****56847","A/c No . *****56847","A/c No . *****56847"," "
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         lblAddMoneyWallet.text = " Add Money Wallet"
@@ -26,6 +27,7 @@ class addMoneyWalletViewController: UIViewController {
         //lblMoneyValue.adjustsFontSizeToFitWidth = true
         //lblAddMoneyWallet.adjustsFontForContentSizeCategory = true
         // Do any additional setup after loading the view.
+        btnProceed.titleLabel?.text = "Procced"
     }
 
 }
@@ -41,6 +43,7 @@ extension addMoneyWalletViewController:  UITableViewDelegate,UITableViewDataSour
         let cell = addMoneyWalletTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! addMoneyWalletCell
         cell.lblBankName.text = bankData[indexPath.row]
         cell.lblAccountNo.text = accountNumber[indexPath.row]
+        cell.lblBankName.font = UIFont.boldSystemFont(ofSize: 17)
         return cell
         
     }

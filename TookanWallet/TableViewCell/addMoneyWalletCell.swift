@@ -10,6 +10,7 @@ import UIKit
 
 class addMoneyWalletCell: UITableViewCell {
 
+    @IBOutlet weak var btnRadio: UIButton!
     @IBOutlet weak var lblAccountNo: UILabel!
     @IBOutlet weak var lblBankName: UILabel!
     override func awakeFromNib() {
