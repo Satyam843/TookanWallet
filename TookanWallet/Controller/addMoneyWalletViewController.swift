@@ -9,8 +9,8 @@
 import UIKit
 
 class addMoneyWalletViewController: UIViewController {
+    //IB Outlets
     @IBOutlet weak var btnProceed: UIButton!
-    
     @IBOutlet weak var btnAddCard: UIButton!
     @IBOutlet weak var btnIcici: UIButton!
     @IBOutlet weak var btnHdfc: UIButton!
@@ -25,9 +25,11 @@ class addMoneyWalletViewController: UIViewController {
     @IBOutlet weak var addMoneyWalletTableView: UITableView!
     @IBOutlet weak var lblMoneyValue: UILabel!
     @IBOutlet weak var lblAddMoneyWallet: UILabel!
+    //Variables
     var bankData = ["State Bank of India","HDFC Bank","ICICI Bank","Add Card"]
     var accountNumber = ["A/c No . *****56847","A/c No . *****56847","A/c No . *****56847"," "
     ]
+    //View life cycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         lblAddMoneyWallet.text = " Add Money Wallet"
@@ -51,7 +53,7 @@ class addMoneyWalletViewController: UIViewController {
         lblAddCard.text = "Add Card"
         lblAddCard.font = UIFont.boldSystemFont(ofSize: 20)
     }
-
+    //IB Action methods
     @IBAction func tapRadioButton(_ sender: UIButton) {
         if sender.tag == 1
         {

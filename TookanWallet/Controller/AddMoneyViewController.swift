@@ -9,30 +9,37 @@
 import UIKit
 
 class AddMoneyViewController: UIViewController,UITextFieldDelegate {
-
+    //IB Outlets
     @IBOutlet weak var amountTextField: UITextField!
+    //View life cycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-amountTextField.delegate = self
-       // super.view.backgroundColor = UIColor.init(red:28/255 , green: 52/255, blue: 248/255, alpha: 255/255)
-        // Do any additional setup after loading the view.
+        
+        amountTextField.delegate = self
+    amountTextField.setBottomOrder()
+       amountTextField.setPadding()
+        amountTextField.borderStyle = UITextField.BorderStyle.none
     }
+    //Private methods
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         amountTextField.resignFirstResponder()
         return true
     }
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+extension UITextField
+{
+    func setPadding()
+    {
+        let paddingView = UIView(frame:CGRect(x: 0, y: 0, width: 10, height: self.frame.height))
+        self.leftView = paddingView
+        self.leftViewMode = .always
     }
-    */
-
+    func setBottomOrder()
+    {
+        self.layer.shadowColor = UIColor.darkGray.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 1)
+        self.layer.shadowOpacity = 1
+        self.layer.shadowRadius = 0
+    }
 }
 
